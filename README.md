@@ -1,2 +1,5 @@
 # Gestion-Bibliotheque
-#Not finish #Usable
+#Reactjs
+#Scss
+#NodeJs
+#MySql
