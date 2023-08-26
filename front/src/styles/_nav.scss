@@ -1,0 +1,47 @@
+.nav{
+    .navContent{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.7rem;
+            background: $color4;
+            color: #fff;
+            p{
+                margin-inline: 3rem;
+            }
+            svg{
+                flex: 2;
+                font-size: 4rem;
+                color: $color2;
+                border: 2px solid $color2;
+                padding: 1rem;
+                border-radius: 50%;
+                position: relative;
+            }
+            .filtre{
+                position: relative;
+                ul{
+                    background: $color4;
+                    position: absolute;
+                    transform: translateY(-117px);
+                    left: 10px;
+                    list-style: none;
+                    padding: 1rem 1.2rem;
+                    li{
+                        padding-bottom: .5rem;
+                        cursor: pointer;
+                        &:hover{
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }

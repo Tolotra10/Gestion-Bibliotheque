@@ -1,0 +1,82 @@
+.livre{
+    position: relative;
+    .search{
+        position: absolute;
+        right: 40px;
+        top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color2;
+        width: 300px;
+        height: 35px;
+        border-radius: 20px;
+        input{
+            background: none;
+            width: 270px;
+            height: 34px;
+            border-radius: 15px 0 0 15px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            &::placeholder{
+                color: $color2;
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            svg{
+                font-size: 1.3rem;
+                margin-left: 15px;
+                color: $color2;
+                transform: translateX(-10px);
+                cursor: pointer;
+            }
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: auto;
+        margin: 2rem;
+        grid-gap: 1rem;
+        .content{
+            background: $color3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: .5rem 0;
+            border-radius: 10px;
+            .tbook{
+                color: $color4;
+                font-weight: 600;
+                font-size: 1.2rem;
+                padding-bottom: 5px;
+            }
+            .cbook{
+                color: $color2;
+                font-size: 1.2rem;
+                padding-bottom: 5px;
+            }
+            .dispo{
+                color: $color2;
+            }
+            .ndispo{
+                color: $color1;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            button{
+                border: none;
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}

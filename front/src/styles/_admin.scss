@@ -1,0 +1,132 @@
+.box,.dash{
+    .container{
+        display: grid;
+    grid-template-columns: 1fr 4fr;
+    }
+}
+.sideBar{
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        position: fixed;
+        top: 130px;
+        left: 0;
+        background: $color4;
+        padding: 2rem;
+        border-radius: 0 20px 20px 0;
+        svg{
+            font-size: 1.3rem;
+        }
+    }
+}
+.box{
+    .container{
+        margin-left: 200px;
+        margin-top: 50px;
+        .content{
+            input,select{
+                width: 200px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+            button{
+                width: 200px;
+                height: 30px;
+                border: none;
+                background: $color2;
+                color: $color4;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.dash{
+    .container{
+        .content{
+            table{
+                thead{
+                    background: $color1;
+                    tr{
+                        th{
+                            padding: 20px 40px;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            text-align: center;
+                            padding: .5rem 0;
+                            svg{
+                                font-size: 1.7rem;
+                                color: $color1;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .complete{
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+}
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color: #fff, $alpha: 0.6);
+    .container{
+        width: 420px;
+        height: 340px;
+        border-radius: 20px;
+        background: $color1;
+        margin: 150px 500px;
+        display: flex;
+        flex-direction: column;
+        p{
+            text-align: center;
+            color: $color3;
+            margin: 20px 0 0;
+            font-size: 1.3rem;
+        }
+        select,.calendar{
+            background: none;
+            width: 60%;
+            margin: 0 6rem;
+            height: 40px;
+            border: 1px solid $color3;
+            outline: none;
+            color: $color3;
+            border-radius: 5px;
+            option{
+                color: $color1;
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            position: absolute;
+            svg{
+                color: $color4;
+                font-size: 2rem;
+                transform: translate(-20px,-20px);
+                cursor: pointer;
+            }
+        }
+        .validate{
+            background: $color4;
+            width: 150px;
+            height: 30px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 135px;
+            border-radius: 5px;
+        }
+    }
+}

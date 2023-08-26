@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Comfortaa-bold';
+    src: url('../fonts/Comfortaa-Bold.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa-medium';
+    src: url('../fonts/Comfortaa-Medium.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa-regular';
+    src: url('../fonts/Comfortaa-Regular.ttf');
+}
+$font-1:'Comfortaa-bold',sans-serif;
+$font-3:'Comfortaa-regular',sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-3;
+    ::-webkit-scrollbar{
+        width: 9px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent, #0b5383);
+        border-radius: 6px;
+    }
+}
+html{
+    font-size: 88%;
+    color: black !important;
+}
+body{
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+button{
+    cursor: pointer;
+}
+$color1 :#ce0b46;
+$color2 :#49b3fa;
+$color3 :#eee;
+$color4 :#0b5383;
